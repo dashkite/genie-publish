@@ -2,6 +2,7 @@ import * as Fn from "@dashkite/joy/function"
 import M from "@dashkite/masonry"
 import * as SNS from "@dashkite/dolores/sns"
 import { Module, File } from "@dashkite/masonry-module"
+import configuration from "./configuration"
 
 defaults =
   glob: "build/browser/src/**/*"
