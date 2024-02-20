@@ -40,4 +40,4 @@ export default ( Genie ) ->
 
     Genie.before "watch", "publish:watch"
     Genie.define "publish:watch", ->
-      Genie.after "build", "publish!-"
+      Genie.after "build", "publish--"
