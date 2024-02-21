@@ -1,5 +1,5 @@
 {
-  "name": "@dashkitie/genie-publish",
+  "name": "@dashkite/genie-publish",
   "version": "0.0.0",
   "description": "Publish build artifacts to S3",
   "keywords": [],

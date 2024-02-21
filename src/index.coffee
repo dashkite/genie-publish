@@ -3,10 +3,7 @@ import M from "@dashkite/masonry"
 import * as SNS from "@dashkite/dolores/sns"
 import { Module, File } from "@dashkite/masonry-module"
 import configuration from "./configuration"
-
-defaults =
-  glob: "build/browser/src/**/*"
-  target: "${ module.name }/${ source.hash }/${ source.path }"
+import defaults from "./defaults"
 
 # TODO does this belong in Masonry Module? or ...?
 notify = do ({ topic } = {}) ->
@@ -23,8 +20,8 @@ export default ( Genie ) ->
       # (ex: bucket name) has been done ...
       options = { defaults..., ( Genie.get "publish" )... }
 
-      do M.start [
-        M.glob options.glob
+      do M.concurrently [
+        M.glob options.glob, root: options.root
         M.read
         Module.data
         File.hash
@@ -33,12 +30,13 @@ export default ( Genie ) ->
             template: options.target
             bucket: options.bucket
             # cache forever because path includes content hash
-            cache: "public, max-age=31536000"
+            cache: options.cache
           File.stamp
           notify
-        ]
+        ]       
       ]
 
     Genie.before "watch", "publish:watch"
+
     Genie.define "publish:watch", ->
       Genie.after "build", "publish--"

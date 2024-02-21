@@ -1,0 +1,4 @@
+root: build/browser/src
+glob: "**/*"
+target: ${ source.path }
+cache: must-revalidate
