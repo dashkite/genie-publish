@@ -4,12 +4,14 @@ import * as SNS from "@dashkite/dolores/sns"
 import { Module, File } from "@dashkite/masonry-module"
 import configuration from "./configuration"
 import defaults from "./defaults"
+import { resolve } from "@dashkite/drn"
+import "@dashkite/drn-sky"
 
 # TODO does this belong in Masonry Module? or ...?
 notify = do ({ topic } = {}) ->
   Fn.tee ({ source, event, module }) -> 
     # TODO add source path
-    topic ?= await SNS.create configuration.topic
+    topic ?= await SNS.create resolve configuration.topic
     SNS.publish topic, { event..., source, module: module?.name }
 
 

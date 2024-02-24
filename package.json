@@ -34,15 +34,15 @@
     "@dashkite/amen": "^0.2.0",
     "@dashkite/amen-console": "^0.0.2",
     "@dashkite/assert": "^0.1.4",
-    "@dashkite/drn-sky": "link:../drn-sky",
     "@dashkite/genie": "^0.8.1",
     "@dashkite/genie-clean": "link:../genie-clean",
     "@dashkite/genie-coffee": "link:../genie-coffee",
-    "@dashkite/genie-drn": "link:../genie-drn",
     "@dashkite/genie-yaml": "link:../genie-yaml"
   },
   "dependencies": {
     "@dashkite/dolores": "link:../dolores",
+    "@dashkite/drn": "link:../drn",
+    "@dashkite/drn-sky": "link:../drn-sky",
     "@dashkite/joy": "^0.3.16",
     "@dashkite/masonry": "link:../masonry",
     "@dashkite/masonry-module": "link:../masonry-module"
