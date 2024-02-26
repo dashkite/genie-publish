@@ -1,7 +1,7 @@
 export default ( Genie ) ->
     
     Genie.on "publish", ->
-      publish = await import( "./tasks" )
+      { publish } = await import( "./tasks" )
       publish Genie
 
     Genie.before "watch", "publish:watch"

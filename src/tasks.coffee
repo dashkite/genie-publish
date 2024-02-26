@@ -11,7 +11,7 @@ import "@dashkite/drn-sky"
 notify = do ({ topic } = {}) ->
   Fn.tee ({ source, event, module }) -> 
     # TODO add source path
-    topic ?= await SNS.create resolve configuration.topic
+    topic ?= await SNS.create await resolve configuration.topic
     SNS.publish topic, { event..., source, module: module?.name }
 
 
@@ -37,4 +37,5 @@ publish = ( Genie ) ->
     ]       
   ]
 
+export { publish }
 export default publish
