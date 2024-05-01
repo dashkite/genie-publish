@@ -37,5 +37,7 @@ publish = ( Genie ) ->
     ]       
   ]
 
-export { publish }
+clean = ( Genie ) -> File.reset()
+
+export { publish, clean }
 export default publish

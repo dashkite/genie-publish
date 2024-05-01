@@ -8,3 +8,7 @@ export default ( Genie ) ->
 
     Genie.define "publish:watch", ->
       Genie.after "build", "publish--"
+
+    Genie.define "publish:clean", ->
+      { clean } = await import( "./tasks" )
+      clean Genie
