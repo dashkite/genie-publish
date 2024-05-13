@@ -14,7 +14,6 @@ notify = do ({ topic } = {}) ->
     topic ?= await SNS.create await resolve configuration.topic
     SNS.publish topic, { event..., source, module: module?.name }
 
-
 publish = ( Genie ) ->
 
   # defer reading configuration to ensure any DRN replacement
