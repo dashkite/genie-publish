@@ -1,6 +1,7 @@
 import * as Fn from "@dashkite/joy/function"
 import M from "@dashkite/masonry"
 import * as SNS from "@dashkite/dolores/sns"
+import { invalidatePaths } from "@dashkite/dolores/cloudfront"
 import { Module, File } from "@dashkite/masonry-module"
 import configuration from "./configuration"
 import defaults from "./defaults"
@@ -19,10 +20,12 @@ publish = ( Genie ) ->
   # defer reading configuration to ensure any DRN replacement
   # (ex: bucket name) has been done ...
   options = { defaults..., ( Genie.get "publish" )... }
+  _invalidate = false
+  invalidate = Fn.tee -> _invalidate = true
 
-  do M.concurrently [
+  await do M.concurrently [
     M.glob options.glob, root: options.root
-    M.read
+    M.readBytes
     Module.data
     File.hash
     File.changed Fn.flow [
@@ -32,9 +35,15 @@ publish = ( Genie ) ->
         # cache forever because path includes content hash
         cache: options.cache
       File.stamp
+      invalidate
       notify
     ]       
   ]
+
+  if _invalidate && options.domains?
+    await Promise.all do ->
+      for domain in options.domains
+        invalidatePaths { domain, paths: [ "/*" ]}
 
 clean = ( Genie ) -> File.reset()
 
