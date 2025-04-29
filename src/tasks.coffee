@@ -8,10 +8,8 @@ import defaults from "./defaults"
 import { resolve } from "@dashkite/drn"
 import "@dashkite/drn-sky"
 
-# TODO does this belong in Masonry Module? or ...?
 notify = do ({ topic } = {}) ->
   Fn.tee ({ source, event, module }) -> 
-    # TODO add source path
     topic ?= await SNS.create await resolve configuration.topic
     SNS.publish topic, { event..., source, module: module?.name }
 
