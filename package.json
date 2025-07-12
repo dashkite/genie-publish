@@ -43,7 +43,7 @@
   },
   "dependencies": {
     "@dashkite/dolores": "0.1.0",
-    "@dashkite/drn": "link:../drn",
+    "@dashkite/drn": "0.2.0",
     "@dashkite/drn-sky": "link:../drn-sky",
     "@dashkite/joy": "^0.3.16",
     "@dashkite/masonry": "0.14.0",
