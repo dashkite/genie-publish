@@ -46,7 +46,7 @@
     "@dashkite/drn": "link:../drn",
     "@dashkite/drn-sky": "link:../drn-sky",
     "@dashkite/joy": "^0.3.16",
-    "@dashkite/masonry": "link:../masonry",
+    "@dashkite/masonry": "0.14.0",
     "@dashkite/masonry-module": "link:../masonry-module"
   }
 }
