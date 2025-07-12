@@ -24,8 +24,8 @@ importers:
         specifier: 0.14.0
         version: 0.14.0
       '@dashkite/masonry-module':
-        specifier: link:../masonry-module
-        version: link:../masonry-module
+        specifier: 0.1.0
+        version: 0.1.0(@aws-sdk/credential-provider-node@3.529.0)
     devDependencies:
       '@dashkite/amen':
         specifier: ^0.2.0
@@ -896,6 +896,9 @@ packages:
   '@dashkite/masonry-hooks@0.1.0':
     resolution: {integrity: sha512-DeRzJH5TDMMK2glUwvNjCqzsKlTrBnJ4pZfYbSIbDvstBDy/6QpHlmEHsg1LL50Olx4fEtuwpjUQ69CT6EgNoQ==}
 
+  '@dashkite/masonry-module@0.1.0':
+    resolution: {integrity: sha512-Wg6NIPzLKDkB+UOZJCo7qeMGfYHajTXYOiPE701I1/ydwD96h/DvFqaGz0f2HUyRzE5JfSfoQ0EJJDZay9+OSQ==}
+
   '@dashkite/masonry-targets@0.1.0':
     resolution: {integrity: sha512-nb1N+oBZLw04AFUV49ZFLBAb/NQ0fJseO6ACrEfgXkHra2I1oxwHxLIKtMqWcedQa3QP2pqA/eeBmtGiTQGM0Q==}
 
@@ -919,6 +922,9 @@ packages:
 
   '@dashkite/zephyr@0.2.0':
     resolution: {integrity: sha512-l3Fm9nyOIp1yBnv4IzGOKVgo1/UucU5WLvsqAfcP2jEVlE4AgpPkODssyloxTyC3N+bhcz1DXqC/7KokI1eVjA==}
+
+  '@dashkite/zephyr@0.3.0':
+    resolution: {integrity: sha512-IcR7Ab6hPE56XZpDoCZpVQtBHBWrDffFQ97f8sQGsqAAww7w/RdchwFFQQQlp9Ke/BansVSEY14rvvzEnLFJeA==}
 
   '@eslint-community/eslint-utils@4.7.0':
     resolution: {integrity: sha512-dyybb3AcajC7uha6CvhdVRJqaKyn7w2YKqKyAN37NKYgZT36w+iRb0Dymmc5qEJ549c/S31cMMSFd75bteCpCw==}
@@ -3953,6 +3959,17 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@dashkite/masonry-module@0.1.0(@aws-sdk/credential-provider-node@3.529.0)':
+    dependencies:
+      '@dashkite/dolores': 0.1.0(@aws-sdk/credential-provider-node@3.529.0)
+      '@dashkite/joy': 0.3.16
+      '@dashkite/kaiko': 0.3.3
+      '@dashkite/zephyr': 0.3.0
+    transitivePeerDependencies:
+      - '@aws-sdk/credential-provider-node'
+      - aws-crt
+      - encoding
+
   '@dashkite/masonry-targets@0.1.0':
     dependencies:
       '@dashkite/joy': 0.3.16
@@ -3999,6 +4016,11 @@ snapshots:
       '@dashkite/joy': 0.3.16
 
   '@dashkite/zephyr@0.2.0':
+    dependencies:
+      '@dashkite/joy': 0.3.16
+      js-yaml: 4.1.0
+
+  '@dashkite/zephyr@0.3.0':
     dependencies:
       '@dashkite/joy': 0.3.16
       js-yaml: 4.1.0
