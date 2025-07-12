@@ -42,7 +42,7 @@
     "@dashkite/genie-yaml": "link:../genie-yaml"
   },
   "dependencies": {
-    "@dashkite/dolores": "link:../dolores",
+    "@dashkite/dolores": "0.1.0",
     "@dashkite/drn": "link:../drn",
     "@dashkite/drn-sky": "link:../drn-sky",
     "@dashkite/joy": "^0.3.16",
