@@ -12,8 +12,8 @@ importers:
         specifier: 0.8.0
         version: 0.8.0(@aws-sdk/credential-provider-node@3.529.0)
       '@dashkite/drn':
-        specifier: 0.8.0
-        version: 0.8.0
+        specifier: 0.12.3
+        version: 0.12.3
       '@dashkite/drn-sky':
         specifier: 0.4.0
         version: 0.4.0(@aws-sdk/credential-provider-node@3.529.0)
@@ -876,11 +876,11 @@ packages:
   '@dashkite/drn-sky@0.4.0':
     resolution: {integrity: sha512-2hR+G/2SEp2DjVDvTUUFa9NH2564coWQSmpy+fo623w90lYpJijFkaMkRSwLYfY1VYT4/G4AMGoXBPC4JyQcyg==}
 
+  '@dashkite/drn@0.12.3':
+    resolution: {integrity: sha512-I+PYPP3s9T4iMP0BM4hPHVFwcbifuQ8JC0CK1EcUN0QJ23vma/5EMem/cTZ0iP6W0dfMBnYdsNBPZWD9RCSFmw==}
+
   '@dashkite/drn@0.4.0':
     resolution: {integrity: sha512-Y8/3n9hLi4ChPMnWXI8OFYhNmFJ7k77C8jaTnqXMNMlXZNa+25RU0vjc//jmEUGSP44amoLUf7EwF1M+kSkuyw==}
-
-  '@dashkite/drn@0.8.0':
-    resolution: {integrity: sha512-LoiRbCzoD+5ZlUgf8pdP6VNQFF5ghYLntX6QTrbSBnUNVNG4lFa/6qaqm6pydDitmUh0KNrMYzmLY5xnICr0zw==}
 
   '@dashkite/genie-clean@0.9.0':
     resolution: {integrity: sha512-cR5IaFycabxIOH0XrExG5DCrm91milsdPqt104+AcIFEtpthwQ55lgOkS660tC8l7SxnwZzMZbZxHP3oK0iT0A==}
@@ -904,6 +904,9 @@ packages:
 
   '@dashkite/joy@0.4.0':
     resolution: {integrity: sha512-pBeuzpzuUzb3I/HNykRQXN3nh8t2JgtmEwScCtQuSU/q3/LODdu4Xd522m7oHVwFXNPZ2CUwJk/MNg+etaX3rQ==}
+
+  '@dashkite/joy@0.5.0':
+    resolution: {integrity: sha512-kaDNKKS6v5r3vukOkh54aarrhiTHwbcKZZW8eDav5FhT6u8RRrmSaFeAbwLzGntdPScaEhqg/PLrvtPHOy9OlQ==}
 
   '@dashkite/joy@0.6.0':
     resolution: {integrity: sha512-6lFhlzHQ3SWqD1o8RcT6prWmiU5KHhdmG/t8AaGChRfYCYOahDmmLtaglMmpNJVWnve8nFL7BBC03+hnTl9HUw==}
@@ -953,14 +956,23 @@ packages:
   '@dashkite/sky-local-storage@0.1.0':
     resolution: {integrity: sha512-nkhAyAWQDsmem7YgEw7DC9BBXU+LyO+oR/J962FcVoUm9SYA1gk7QU0SbNVQZiGsNZG/T/iIjMHUH1bdidASRA==}
 
+  '@dashkite/sky-local-storage@0.8.0':
+    resolution: {integrity: sha512-ECEomLb3/hkICATZWI5et6WQZTJQRAt7aW0LHkwUXg5mReUEN23xsRy41QSXis6b0UzvvPYR9LfwldmPIkqqdA==}
+
   '@dashkite/tweetnacl@1.0.3':
     resolution: {integrity: sha512-qBw5yhOw8mCe7fV6sw/5DIfQLW3txB+MlSDngf7h2WwnRz5CWzmhVBnKuYHcMXX9u50T4iW0AR/FwEl6Tm/TMQ==}
 
   '@dashkite/url-codex@0.1.1':
     resolution: {integrity: sha512-+uZ+JZEZdRAAHj8s+K/C8lNgc5C/Egae2ret7e1t0JtNeE7dCwRsLkKPtIG6gelX3+ebV0dD54khiLgs2L3JlA==}
 
+  '@dashkite/url-codex@0.5.0':
+    resolution: {integrity: sha512-oQVWxXEOdC2B4UzvI/+gQJqzzbhxhRV9p/uMrnHy4WKLT/k9GtyEaqSWcvTJicCl17/goNP2hmdMroN5lgMkrg==}
+
   '@dashkite/url-router@0.1.0':
     resolution: {integrity: sha512-VigD1eoQrAUskxbz3BLQ/4RBBpsbwc5BzAuVBkRDzgdVQ/N32VucH6QOxRTK1jgSszHjoKDhvkkIzwlfYMl48g==}
+
+  '@dashkite/url-router@0.5.0':
+    resolution: {integrity: sha512-DCdC5kvOHsH4+xwuyR2tJMmZS2r1bK4N0oWXLnMgRPab8tHEIXOXNHmmxPhFaMir7Z1mWSNGYOl90Tzefx69jg==}
 
   '@dashkite/utf8@1.0.1':
     resolution: {integrity: sha512-58HZrEijYUG9p8SAf4o/NR7U3qUq//9XbkQ7T5cHIY/RFjCVg9vpWZlHXkcbZp7v3CAMJgEGVXt/5/upvOBQAw==}
@@ -973,6 +985,9 @@ packages:
 
   '@dashkite/zephyr@0.3.0':
     resolution: {integrity: sha512-IcR7Ab6hPE56XZpDoCZpVQtBHBWrDffFQ97f8sQGsqAAww7w/RdchwFFQQQlp9Ke/BansVSEY14rvvzEnLFJeA==}
+
+  '@dashkite/zephyr@0.9.0':
+    resolution: {integrity: sha512-2GbFGwJkyXpwK1jPl9ZO4l6M6bU5vs0F4r7s1lVvx2DwMU1jiTWWBXpHwy92Gz9NE1aH5gohICrgC47aKvKccQ==}
 
   '@deno/shim-deno-test@0.5.0':
     resolution: {integrity: sha512-4nMhecpGlPi0cSzT67L+Tm+GOJqvuk8gqHBziqcUQOarnuIax1z96/gJHCSIz2Z0zhxE6Rzwb3IZXPtFh51j+w==}
@@ -1430,7 +1445,6 @@ packages:
 
   bun@1.2.19:
     resolution: {integrity: sha512-P70KUfH9cvgcl8Hjvamr98NinEatV23yX6qaY7z1+3rBPdds0oVX0u6FfrYnWc8F3ayFQ4do6/6xBLWY4itJkQ==}
-    cpu: [arm64, x64, aarch64]
     os: [darwin, linux, win32]
     hasBin: true
 
@@ -4073,18 +4087,18 @@ snapshots:
       - aws-crt
       - encoding
 
-  '@dashkite/drn@0.4.0':
+  '@dashkite/drn@0.12.3':
     dependencies:
       '@dashkite/bake': 0.0.6
-      '@dashkite/joy': 0.3.16
-      '@dashkite/sky-local-storage': 0.1.0
-      '@dashkite/url-codex': 0.1.1
-      '@dashkite/url-router': 0.1.0
-      '@dashkite/zephyr': 0.3.0
+      '@dashkite/joy': 0.7.0
+      '@dashkite/sky-local-storage': 0.8.0
+      '@dashkite/url-codex': 0.5.0
+      '@dashkite/url-router': 0.5.0
+      '@dashkite/zephyr': 0.9.0
       execa: 5.1.1
       js-yaml: 4.1.0
 
-  '@dashkite/drn@0.8.0':
+  '@dashkite/drn@0.4.0':
     dependencies:
       '@dashkite/bake': 0.0.6
       '@dashkite/joy': 0.3.16
@@ -4146,6 +4160,8 @@ snapshots:
   '@dashkite/joy@0.3.16': {}
 
   '@dashkite/joy@0.4.0': {}
+
+  '@dashkite/joy@0.5.0': {}
 
   '@dashkite/joy@0.6.0': {}
 
@@ -4239,6 +4255,10 @@ snapshots:
     dependencies:
       '@dashkite/zephyr': 0.3.0
 
+  '@dashkite/sky-local-storage@0.8.0':
+    dependencies:
+      '@dashkite/zephyr': 0.3.0
+
   '@dashkite/tweetnacl@1.0.3': {}
 
   '@dashkite/url-codex@0.1.1':
@@ -4246,7 +4266,17 @@ snapshots:
       '@dashkite/joy': 0.3.16
       '@dashkite/parse': 0.4.3
 
+  '@dashkite/url-codex@0.5.0':
+    dependencies:
+      '@dashkite/joy': 0.5.0
+      '@dashkite/parse': 0.4.3
+
   '@dashkite/url-router@0.1.0':
+    dependencies:
+      '@dashkite/joy': 0.3.16
+      '@dashkite/url-codex': 0.1.1
+
+  '@dashkite/url-router@0.5.0':
     dependencies:
       '@dashkite/joy': 0.3.16
       '@dashkite/url-codex': 0.1.1
@@ -4263,6 +4293,11 @@ snapshots:
       js-yaml: 4.1.0
 
   '@dashkite/zephyr@0.3.0':
+    dependencies:
+      '@dashkite/joy': 0.3.16
+      js-yaml: 4.1.0
+
+  '@dashkite/zephyr@0.9.0':
     dependencies:
       '@dashkite/joy': 0.3.16
       js-yaml: 4.1.0

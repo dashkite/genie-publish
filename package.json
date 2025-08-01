@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "@dashkite/dolores": "0.8.0",
-    "@dashkite/drn": "0.8.0",
+    "@dashkite/drn": "0.12.3",
     "@dashkite/drn-sky": "0.4.0",
     "@dashkite/joy": "^0.7.0",
     "@dashkite/masonry": "0.21.0",
