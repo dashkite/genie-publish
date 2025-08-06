@@ -12,11 +12,11 @@ importers:
         specifier: ^0.8.0
         version: 0.8.0(@aws-sdk/credential-provider-node@3.529.0)
       '@dashkite/drn':
-        specifier: ^0.12.10
-        version: 0.12.10
+        specifier: ^0.12.11
+        version: 0.12.11
       '@dashkite/drn-sky':
-        specifier: ^0.8.9
-        version: 0.8.9(@aws-sdk/credential-provider-node@3.529.0)
+        specifier: ^0.8.10
+        version: 0.8.10(@aws-sdk/credential-provider-node@3.529.0)
       '@dashkite/joy':
         specifier: ^0.7.0
         version: 0.7.0
@@ -873,11 +873,11 @@ packages:
   '@dashkite/dolores@0.8.0':
     resolution: {integrity: sha512-ga+AxqsQcUjW3D5J6mCQqTU7GqJsmnlT9OfqYrmPA3lGJSjk0GqJRQb3RIjoqjjXVszeK8vAW3RdJPx0W7OhNw==}
 
-  '@dashkite/drn-sky@0.8.9':
-    resolution: {integrity: sha512-G5IdU7F5Ttz/MOoydvZYSOxywDRNZ/78eptl1euH4QET60JcVAmb/MS4aUwKrpChPyrN8rJpcH/9h2PCm3RNLw==}
+  '@dashkite/drn-sky@0.8.10':
+    resolution: {integrity: sha512-7HlRpGCrUM+X/MxsYXbwK3FF1k+z8jqgNITq/QbNFT7S3QRt7yM7WEEitp82xGOon+QZ5MR3BvPhHnIA8J4yVw==}
 
-  '@dashkite/drn@0.12.10':
-    resolution: {integrity: sha512-EZWqUa0sQszoiR/P+unIQDEk50jjlWVYYeuldDbh01Fs0XwgaF7iXN48OBsmJcp4ApGM5MlyG6SE2hmOkcPGbw==}
+  '@dashkite/drn@0.12.11':
+    resolution: {integrity: sha512-s8aOOq+yXx/qKv8zJ7sooVw/70+2mGfWldZ7IEKH4DmAxvu8oLHPIv3rJL2WLlU1xVbFWcYTwitgtHuUET5tCg==}
 
   '@dashkite/genie-clean@0.9.0':
     resolution: {integrity: sha512-cR5IaFycabxIOH0XrExG5DCrm91milsdPqt104+AcIFEtpthwQ55lgOkS660tC8l7SxnwZzMZbZxHP3oK0iT0A==}
@@ -4002,11 +4002,11 @@ snapshots:
       - aws-crt
       - encoding
 
-  '@dashkite/drn-sky@0.8.9(@aws-sdk/credential-provider-node@3.529.0)':
+  '@dashkite/drn-sky@0.8.10(@aws-sdk/credential-provider-node@3.529.0)':
     dependencies:
       '@dashkite/bake': 0.0.6
       '@dashkite/dolores': 0.8.0(@aws-sdk/credential-provider-node@3.529.0)
-      '@dashkite/drn': 0.12.10
+      '@dashkite/drn': 0.12.11
       '@dashkite/joy': 0.7.0
       '@dashkite/sky-local-storage': 0.8.0
       '@dashkite/xrl': 0.4.0
@@ -4018,7 +4018,7 @@ snapshots:
       - aws-crt
       - encoding
 
-  '@dashkite/drn@0.12.10':
+  '@dashkite/drn@0.12.11':
     dependencies:
       '@dashkite/bake': 0.0.6
       '@dashkite/joy': 0.7.0
